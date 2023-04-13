@@ -10,4 +10,4 @@ def main(data_path):
     df = pd.merge(df_nade_data, df_angle_data, how='inner', on='ID')
     df = pd.merge(df, df_hit_data, how='inner', on='ID')
 
-    df.to_csv('../classification_all_feature_data.csv')
+    df.to_csv('../classification_all_feature_data_trained.csv')

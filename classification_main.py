@@ -4,7 +4,7 @@ from classification import angle_duration_velocity, flash_nade_shot_main, all_fe
 from classification.hit import hit_main
 
 
-def main(data):
+def main(data: str) -> None:
     os.mkdir('./classification/data_to_combine')
 
     flash_nade_shot_main.main(data)
@@ -15,5 +15,5 @@ def main(data):
 
 
 if __name__ == '__main__':
-    data_path = ''
+    data_path = r''
     main(data_path)
