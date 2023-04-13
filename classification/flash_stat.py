@@ -153,6 +153,3 @@ def flashStatGenerator(file_dir):
                                  'affectedFriendlyDeficiency': affectedFriendlyDeficiency,
                                  'affectedTotalDuration': affectedTotalDuration,
                                  'flashEfficiencyInTotal': flashEfficiencyInTotal})
-
-
-# flashStatGenerator(r'D:\CSGO_Aanlysis\demos\test')

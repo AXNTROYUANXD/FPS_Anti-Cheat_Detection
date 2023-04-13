@@ -1,5 +1,5 @@
-import os
 import csv
+import os
 
 
 def totalRounds(file_dir):
@@ -114,8 +114,5 @@ def grenadeStats(file_dir):
                              'Smoke Grenade': SMK,
                              'Smoke Grenade_per_round': SMK_PR, 'avg_Smoke Grenade_per_round': avg_SMK_PR,
                              'total_Smoke Grenade': total_SMK, 'IM_Applied_Rate': IM_A_R,
-                                                                'FB_Applied_Rate': FB_A_R, 'HE_Applied_Rate': HE_A_R,
-                                                                'SMK_Applied_Rate': SMK_A_R})
-
-
-# grenadeStats(r'D:\CSGO_Aanlysis\demos\test')
+                             'FB_Applied_Rate': FB_A_R, 'HE_Applied_Rate': HE_A_R,
+                             'SMK_Applied_Rate': SMK_A_R})

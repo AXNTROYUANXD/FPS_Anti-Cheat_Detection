@@ -1,5 +1,6 @@
-import os
 import csv
+import os
+
 import pandas as pd
 
 
@@ -72,5 +73,3 @@ def inertialShotGenerator(file_dir):
                                         final_df.to_csv(root + '/' + 'inertial_shots_final.csv', encoding="utf_8_sig")
                                 break
                 break
-
-# inertialShotGenerator(r"D:\CSGO_Aanlysis\demos\test")

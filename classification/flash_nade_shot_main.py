@@ -129,6 +129,3 @@ def main(dir):
     convert2oneInFolder(dir)
     convert2One(dir)
     eliminateDuplicates(dir)
-
-# # 重置 demo位置
-# move("D:\CSGO_Aanlysis\demos\S_plus")

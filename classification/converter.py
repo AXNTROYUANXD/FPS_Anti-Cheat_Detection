@@ -139,9 +139,3 @@ def convertEverything(file_dir):
         merged_df = pd.merge(df1, df2, on="ID", how="outer")
         merged_df = pd.merge(merged_df, df3, on="ID", how="outer")
         merged_df.to_csv(root + '/' + "FINAL.csv", index=False, encoding="utf_8_sig")
-
-
-# convert2oneInFolder(r"D:\CSGO_Aanlysis\demos\test\cheat")
-# convert2One(r"D:\CSGO_Aanlysis\demos\test\cheat")
-# eliminateDuplicates(r"D:\CSGO_Aanlysis\demos\test\cheat")
-convertEverything(r'C:\Users\bruce\Desktop\FINAL')

@@ -1,5 +1,5 @@
-import os
 import csv
+import os
 
 
 def occluderGenerator(file_dir):
@@ -44,7 +44,7 @@ def occluderGenerator(file_dir):
                                     attacker_data[attacker_name]['manyPenetrationsWallBangTime'] += 1
                             if is_first_kill == 'True':
                                 attacker_data[attacker_name]['firstKillTime'] += 1
-                            if attacker_blinded== 'True':
+                            if attacker_blinded == 'True':
                                 attacker_data[attacker_name]['blindedKillTime'] += 1
                             if no_scope == 'True':
                                 attacker_data[attacker_name]['noScopeKillTime'] += 1
@@ -72,6 +72,3 @@ def occluderGenerator(file_dir):
                                          'blindedKillTime': attacker_blinded_kill_time,
                                          'noScopeKillTime': no_scope_kill_time,
                                          'thruSmokeKillTime': thru_smoke_kill_time})
-
-
-# occluderGenerator(r'D:\CSGO_Aanlysis\demos\test')

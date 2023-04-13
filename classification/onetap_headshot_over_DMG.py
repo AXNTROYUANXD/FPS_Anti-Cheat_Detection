@@ -236,6 +236,3 @@ def shotEfficiencyGenerator(file_dir):
                                          '800_1000_oneTap': data['800_1000_oneTap'],
                                          'more_1000_oneTap': data['more_1000_oneTap'],
                                          'oneTapPercentage': one_tap_percentage})
-
-
-# shotEfficiencyGenerator(r'D:\CSGO_Aanlysis\demos\test')
