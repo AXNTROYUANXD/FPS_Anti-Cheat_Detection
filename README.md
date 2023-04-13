@@ -74,16 +74,26 @@ Need to install the `weka` (https://www.cs.waikato.ac.nz/ml/weka/)
 Because of the limited time, a small part of the code is still not very user-friendly to run on a different environment. That is the exactly reason why we provide a higher-level testing and training set data for you to run it more smoothly. However, if you insist to run everything from the very beginning, it would take very long time and memory. Also, you may encounter some slight problems for MLP preprocessing. If you encounter any problem you can contact with [jiayi719@connect.hku.hk](mailto:jiayi719@connect.hku.hk), [magimaki@connect.hku.hk](mailto:magimaki@connect.hku.hk). We will try to work it out for you. Thanks a lot.
 
 - Classification
+
   - Before running classification, make sure that no folder named `data_to_combine `and `angle_data` under the `classification` directory.
   - Change the value of `data_path` variable in the `classification_main.py` to the path of demo you prepared.
   - After successfully running the code, the training data `classification_all_feature_data_trained.csv` will be generated under the root directory.
+
 - LSTM
+
   - If you want to use our trained model directly on testing set, you just simply need to unzip two zip files, and merge them into one. The file structure must be 
-    - -First_Folder
-      --Second_Folder
-      ---your unzipped files here
+
+    - ```
+      -First_Folder
+      	-Second_Folder
+      		-Your unzipped files here
+      ```
+
     - Otherwise, you cannot run the code successfully.
+
     - After unzipping, you should also change the directory into your first folder path in the `last_main.py`, and pass the second parameter as `'test'`.
+
     - You will obtain a .txt file which contains the raw prediction result of LSTM. If you want to use weka, you need to convert the text file into csv first, you can use `lstm_txt_to_csv.py`, in which you need to change the directory as your text file. Also, you need to manually change the parameter(numbers of players) at line 8 (in range()).
+
       - Test Mode: 20
       - Train Mode: The number of your players, can be calculated by checking the text file rows: ((#rows - 1) / 10) - 1
