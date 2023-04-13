@@ -1,0 +1,15 @@
+# IDE
+.fleet/
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Python
+*.pyc
+
+# File
+*.xlsx
+*.xlsm
+*.csv
